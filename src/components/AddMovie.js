@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
 import addMovie from '../actions/addMovie'
-import deleteMovie from '../actions/deleteMovie'
 
-class AddMovies extends Component {
+class AddMovie extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -53,4 +51,4 @@ class AddMovies extends Component {
 }
 
 
-export default AddMovies;
+export default AddMovie;

@@ -13,7 +13,7 @@ class Movies extends Component {
             <div style={{backgroundColor: 'black', fontSize: '15px', color: 'white', textAlign: 'center', width: '100vw'}}>
                 <h1 >Movies</h1>
             </div>
-            <AddMovie />
+            <AddMovie addMovie={this.props.onAddMovie}/>
             <br />
             <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-around'}}>
                 <div style={{display: 'flex', flexDirection: 'column'}}>

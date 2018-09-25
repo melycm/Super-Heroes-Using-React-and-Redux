@@ -1,7 +1,7 @@
 function addMovie(item){
 
     return {
-        type: "AddMovie",
+        type: "addMovie",
         movieData: {
             movieName: item.movieName,
             moviePoster: item.moviePoster

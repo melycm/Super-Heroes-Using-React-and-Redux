@@ -23,10 +23,13 @@ function movieReducer(state, action) {
         case "addMovie":
         return{
             ...state,
-            movieList: state.movieList.concat({
-                movieName: action.movieData.movieName,
-                moviePoster: action.movieData.moviePoster
-            })  
+            movieList: [
+                ...state.movieList,
+                {
+                    movieName: action.movieData.movieName,
+                    moviePoster: action.movieData.moviePoster
+                }
+            ] 
         }
         
         case "deleteMovie":
