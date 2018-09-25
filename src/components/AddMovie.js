@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import addMovie from '../actions/addMovie'
+import '../index.css'
 
 class AddMovie extends Component {
     constructor(props) {
@@ -24,7 +25,7 @@ class AddMovie extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
 
             <input type="text"
             placeholder="Movie Name"
@@ -33,7 +34,7 @@ class AddMovie extends Component {
             />
 
             <input type="text"
-            placeholder="Movie Poster"
+            placeholder="Poster Path"
             onChange={this.moviePosterChangedHandler.bind(this)}
             value={this.state.moviePoster}
             />

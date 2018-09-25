@@ -15,7 +15,6 @@ function movieReducer(state, action) {
                     moviePoster: 'https://images-na.ssl-images-amazon.com/images/I/71QmHTRLllL._SY606_.jpg'
                 }
             ]
-            
         };
     }
 
